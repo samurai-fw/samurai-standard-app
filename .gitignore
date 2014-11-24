@@ -1,0 +1,9 @@
+Log/
+Temp/
+composer.lock
+composer.phar
+vendor
+test
+coverage/
+coverage.xml
+coveralls-upload.json

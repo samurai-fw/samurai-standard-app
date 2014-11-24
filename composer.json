@@ -1,0 +1,23 @@
+{
+    "name": "samurai/standard-app",
+    "type": "project",
+    "description": "Samurai Framework starndard project.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "John Doe",
+            "email": "john@example.jp",
+            "homepage": "https://example.jp/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "samurai/samurai": "3.0.*-dev",
+        "phpspec/phpspec": "2.1.x-dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "App": ""
+        }
+    }
+}
