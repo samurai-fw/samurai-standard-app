@@ -12,8 +12,9 @@
         }
     ],
     "require": {
-        "samurai/samurai": "3.0.*-dev",
-        "phpspec/phpspec": "2.1.x-dev"
+        "samurai-fw/samurai": "3.0.*@dev",
+        "robmorgan/phinx": "*",
+        "phpspec/phpspec": "2.2.*@dev"
     },
     "autoload": {
         "psr-0": {
