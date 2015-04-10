@@ -35,6 +35,7 @@ use Samurai\Samurai\Component\Core\Initializer;
 use Samurai\Samurai\Component\Console\Client\MultipleClient;
 use Samurai\Samurai\Component\Console\Client\BrowserClient;
 use Samurai\Samurai\Component\Console\Client\BuiltinServerClient;
+use Samurai\Samurai\Component\Console\Client\ConsoleClient;
 use Samurai\Samurai\Component\Console\Client\IgnoreClient;
 
 /**
@@ -56,7 +57,7 @@ class Console extends Initializer
         $app->config('container.callback.initialized.', function($c) {
             switch (php_sapi_name()) {
                 case 'cli':
-                    $console = new IgnoreClient();
+                    $console = new ConsoleClient();
                     break;
                 case 'cli-server':
                     $console = new MultipleClient();
