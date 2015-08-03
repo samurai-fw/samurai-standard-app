@@ -54,7 +54,7 @@ class Renderer extends Initializer
         $app->config('renderer.name', 'twig');
         $app->config('renderer.auto_reload', true);
         $app->config('renderer.auto_escape_html', true);
-        $app->config('renderer.initializers.default', function(Application $app, SamuraiRenderer $renderer) {
+        $app->config('renderer.initializers.app', function(SamuraiApplication $app, SamuraiRenderer $renderer) {
             $this->initialize($app, $renderer);
         });
         */
