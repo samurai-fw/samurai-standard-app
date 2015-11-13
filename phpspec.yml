@@ -1,0 +1,11 @@
+---
+formatter.name: progress
+suites:
+    app:
+        src_path: .
+        spec_path: .
+        spec_prefix: App\Spec
+    app-console:
+        src_path: .
+        spec_path: .
+        spec_prefix: App\Console\Spec
